@@ -1,17 +1,26 @@
 pipeline {
-  agent github
+  agent none
   stages {
     stage('verify act installation') {
+      agent { 
+        label 'github'
+      }
       steps {
         sh 'act --version'
       }
     }
     stage('run the entire pipeline') {
+      agent { 
+        label 'github'
+      }
       steps {
         sh 'act'
       }
     }
     stage('view the executive graph') {
+      agent { 
+        label 'github'
+      }
       steps {
         sh 'act -l'
       }
