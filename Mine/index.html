@@ -1,0 +1,135 @@
+<html>
+
+<head>
+  <p id="title">MineSweeper By Luke Thayer</p>
+  <meta name="Luke Thayer">
+ <!-- <script src="Game.js" type="text/javascript"></script>
+  <script src="Bomb.js" type="text/javascript"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>MineSweeper</title>
+  
+  <script>
+  var _0xa4d5=["\x78","\x79","\x77","\x69","\x6A","\x74\x68\x65\x62\x6F\x6D\x62","\x72\x65\x76\x65\x61\x6C\x65\x64","\x6B\x65\x79\x70\x72\x65\x73\x73\x65\x64","\x61\x6C\x6C\x42\x6F\x6D\x62\x73","","\x66\x6C\x61\x67\x67\x65\x64","\x52\x6B\x65\x79","\x67\x61\x6D\x65","\x47\x61\x6D\x65\x42\x6F\x61\x72\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x72\x65\x63\x74","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x23\x66\x63\x66\x63\x66\x63","\x66\x69\x6C\x6C\x52\x65\x63\x74","\x73\x74\x72\x6F\x6B\x65\x53\x74\x79\x6C\x65","\x23\x34\x65\x34\x65\x34\x66","\x73\x74\x72\x6F\x6B\x65","\x23\x33\x33\x66\x66\x36\x38","\x52\x61\x63\x69\x6E\x67\x46\x6C\x61\x67\x32","\x64\x72\x61\x77\x49\x6D\x61\x67\x65","\x72\x65\x64","\x62\x6F\x6D\x62\x70\x69\x63","\x67\x6C\x6F\x62\x61\x6C\x41\x6C\x70\x68\x61","\x62\x6C\x61\x63\x6B","\x62\x6C\x75\x65","\x67\x72\x65\x65\x6E","\x23\x30\x30\x30\x30\x36\x36","\x23\x39\x39\x33\x33\x30\x30","\x23\x30\x30\x63\x63\x39\x39","\x67\x72\x61\x79","\x66\x6F\x6E\x74","\x33\x30\x70\x78\x20\x41\x72\x69\x61\x6C","\x74\x65\x78\x74\x41\x6C\x6C\x69\x67\x6E","\x63\x65\x6E\x74\x65\x72","\x66\x69\x6C\x6C\x54\x65\x78\x74","\x6C\x65\x6E\x67\x74\x68","\x68\x65\x69\x67\x68\x74","\x77\x69\x64\x74\x68","\x66\x6C\x6F\x6F\x72","\x63\x6C\x69\x63\x6B","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6F\x6E\x74\x65\x78\x74\x6D\x65\x6E\x75","\x73\x68\x6F\x77\x42\x6F\x6D\x62","\x72\x61\x6E\x64\x6F\x6D","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x63\x6F\x75\x6E\x74\x65\x72","\x6F\x66\x66\x73\x65\x74\x50\x61\x72\x65\x6E\x74","\x6F\x66\x66\x73\x65\x74\x4C\x65\x66\x74","\x6F\x66\x66\x73\x65\x74\x54\x6F\x70","\x70\x61\x67\x65\x58","\x70\x61\x67\x65\x59","\x7A\x65\x72\x6F\x43\x61\x6C\x63","\x62\x6F\x6D\x62\x43\x6F\x75\x6E\x74","\x67\x67","\x6C\x6F\x67","\x74\x65\x73\x74","\x50\x4F\x53\x54","\x73\x61\x76\x65\x2E\x70\x68\x70","\x61\x6A\x61\x78","\x74\x69\x6D\x65\x72","\x30","\x3A","\x59\x6F\x75\x20\x4C\x6F\x73\x74\x21\x0A\x44\x6F\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x20\x74\x6F\x20\x73\x74\x61\x72\x74\x20\x61\x20\x6E\x65\x77\x20\x67\x61\x6D\x65\x3F\x0A","\x54\x69\x6D\x65\x20\x53\x70\x65\x6E\x74\x20\x20","\x0A\x4E\x75\x6D\x62\x65\x72\x20\x6F\x66\x20\x62\x6F\x6D\x62\x73\x20\x63\x6C\x65\x61\x72\x65\x64\x3A\x20","\x59\x6F\x75\x20\x57\x6F\x6E\x21\x0A\x44\x6F\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x20\x74\x6F\x20\x73\x74\x61\x72\x74\x20\x61\x20\x6E\x65\x77\x20\x67\x61\x6D\x65\x3F\x0A","\x54\x69\x6D\x65\x20\x53\x70\x65\x6E\x74\x20\x20\x20","\x0A\x0A\x45\x6E\x74\x65\x72\x20\x79\x6F\x75\x72\x20\x6E\x61\x6D\x65\x20\x66\x6F\x72\x20\x74\x68\x65\x20\x6C\x65\x61\x64\x65\x72\x62\x6F\x61\x72\x64\x73\x20\x28\x6C\x69\x6D\x69\x74\x20\x31\x30\x20\x43\x68\x61\x72\x61\x63\x74\x65\x72\x73\x29\x3A","\x73\x75\x62\x73\x74\x72\x69\x6E\x67"];class bomb{constructor(_0xb692x2,_0xb692x3,_0xb692x4,_0xb692x5,w){this[_0xa4d5[0]]= _0xb692x4;this[_0xa4d5[1]]= _0xb692x5;this[_0xa4d5[2]]= w;this[_0xa4d5[3]]= _0xb692x2;this[_0xa4d5[4]]= _0xb692x3;this[_0xa4d5[5]]= false;this[_0xa4d5[6]]= false;this[_0xa4d5[7]]= false;this[_0xa4d5[8]]= _0xa4d5[9];this[_0xa4d5[10]]= false;this[_0xa4d5[11]]= false;this[_0xa4d5[12]]= false}showBomb(){let canvas=document[_0xa4d5[14]](_0xa4d5[13]);let _0xb692x9=canvas[_0xa4d5[16]](_0xa4d5[15]);_0xb692x9[_0xa4d5[17]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);_0xb692x9[_0xa4d5[18]]= _0xa4d5[19];_0xb692x9[_0xa4d5[20]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);_0xb692x9[_0xa4d5[21]]= _0xa4d5[22];_0xb692x9[_0xa4d5[23]]();if(this[_0xa4d5[10]]){_0xb692x9[_0xa4d5[17]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);_0xb692x9[_0xa4d5[18]]= _0xa4d5[24];_0xb692x9[_0xa4d5[20]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);let _0xb692xa=document[_0xa4d5[14]](_0xa4d5[25]);_0xb692x9[_0xa4d5[26]](_0xb692xa,this[_0xa4d5[0]]+ this[_0xa4d5[2]]* 0.0025,this[_0xa4d5[1]]+ this[_0xa4d5[2]]* 0.0025,w,w)};if(this[_0xa4d5[6]]){if(this[_0xa4d5[5]]){if(this[_0xa4d5[10]]== false){_0xb692x9[_0xa4d5[18]]= _0xa4d5[27]}else {if(this[_0xa4d5[10]]== true){_0xb692x9[_0xa4d5[18]]= _0xa4d5[24]}};_0xb692x9[_0xa4d5[20]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);let _0xb692xa=document[_0xa4d5[14]](_0xa4d5[28]);_0xb692x9[_0xa4d5[26]](_0xb692xa,this[_0xa4d5[0]]+ this[_0xa4d5[2]]* 0.0025,this[_0xa4d5[1]]+ this[_0xa4d5[2]]* 0.0025,w,w)}else {_0xb692x9[_0xa4d5[29]]= 0.2;_0xb692x9[_0xa4d5[18]]= _0xa4d5[30];_0xb692x9[_0xa4d5[20]](this[_0xa4d5[0]],this[_0xa4d5[1]],this[_0xa4d5[2]],this[_0xa4d5[2]]);if(this[_0xa4d5[8]]== 1){_0xb692x9[_0xa4d5[18]]= _0xa4d5[31]}else {if(this[_0xa4d5[8]]== 2){_0xb692x9[_0xa4d5[18]]= _0xa4d5[32]}else {if(this[_0xa4d5[8]]== 3){_0xb692x9[_0xa4d5[18]]= _0xa4d5[27]}else {if(this[_0xa4d5[8]]== 4){_0xb692x9[_0xa4d5[18]]= _0xa4d5[33]}else {if(this[_0xa4d5[8]]== 5){_0xb692x9[_0xa4d5[18]]= _0xa4d5[34]}else {if(this[_0xa4d5[8]]== 6){_0xb692x9[_0xa4d5[18]]= _0xa4d5[35]}else {if(this[_0xa4d5[8]]== 7){_0xb692x9[_0xa4d5[18]]= _0xa4d5[30]}else {if(this[_0xa4d5[8]]== 8){_0xb692x9[_0xa4d5[18]]= _0xa4d5[36]}}}}}}}};_0xb692x9[_0xa4d5[29]]= 1.0;_0xb692x9[_0xa4d5[37]]= _0xa4d5[38];_0xb692x9[_0xa4d5[39]]= _0xa4d5[40];_0xb692x9[_0xa4d5[41]](this[_0xa4d5[8]],this[_0xa4d5[0]]+ this[_0xa4d5[2]]* 0.25,this[_0xa4d5[1]]+ this[_0xa4d5[2]]* 0.85)}};return _0xb692x9}bombCount(){if(this[_0xa4d5[5]]== false){let _0xb692xc=0;for(let _0xb692x4=-1;_0xb692x4<= 1;_0xb692x4++){for(let _0xb692x5=-1;_0xb692x5<= 1;_0xb692x5++){if((_0xb692x4+ this[_0xa4d5[3]])>  -1&& (_0xb692x4+ this[_0xa4d5[3]])< c&& (_0xb692x5+ this[_0xa4d5[4]])>  -1&& (_0xb692x5+ this[_0xa4d5[4]])< r){if(grid[this[_0xa4d5[3]]+ _0xb692x4][this[_0xa4d5[4]]+ _0xb692x5][_0xa4d5[5]]== true){_0xb692xc++}}}};if(_0xb692xc> 0){return this[_0xa4d5[8]]= _0xb692xc};return this[_0xa4d5[8]]= _0xa4d5[9]}}zeroCalc(){this[_0xa4d5[6]]= true;this[_0xa4d5[7]]== true;if(this[_0xa4d5[8]]== 0){clearSpace(this[_0xa4d5[3]],this[_0xa4d5[4]])}}};let grid;let r;let c;let canvas;let w;let track=false;let count;let victory=false;let gameOver=false;let flagged_bombs=0;let bombs_picked=false;let beginning_count;let clicked=0;let mode=0;let empty_spaces;let myTimer;let timerclicked=false;let ctime=0;function makeBoard(c,r){let _0xb692x1f= new Array(c);for(let _0xb692x2=0;_0xb692x2< _0xb692x1f[_0xa4d5[42]];_0xb692x2++){_0xb692x1f[_0xb692x2]=  new Array(r)};return _0xb692x1f}function setupGrid(){canvas= document[_0xa4d5[14]](_0xa4d5[13]);if(mode== 0){canvas[_0xa4d5[43]]= 360;canvas[_0xa4d5[44]]= 360}else {if(mode== 1){canvas[_0xa4d5[43]]= 480;canvas[_0xa4d5[44]]= 480}else {if(mode== 2){canvas[_0xa4d5[43]]= 480;canvas[_0xa4d5[44]]= 900}}};c= Math[_0xa4d5[45]](canvas[_0xa4d5[44]]/ w);r= Math[_0xa4d5[45]](canvas[_0xa4d5[43]]/ w);empty_spaces= 0;grid= makeBoard(c,r);for(let _0xb692x2=0;_0xb692x2< c;_0xb692x2++){for(let _0xb692x3=0;_0xb692x3< r;_0xb692x3++){grid[_0xb692x2][_0xb692x3]=  new bomb(_0xb692x2,_0xb692x3,_0xb692x2* w,_0xb692x3* w,w);empty_spaces++}}}function drawGrid(){for(let _0xb692x2=0;_0xb692x2< c;_0xb692x2++){for(let _0xb692x3=0;_0xb692x3< r;_0xb692x3++){if(grid[_0xb692x2][_0xb692x3][_0xa4d5[12]]== false){canvas[_0xa4d5[47]](_0xa4d5[46],onClick,false);canvas[_0xa4d5[47]](_0xa4d5[48],onRClick,false);grid[_0xb692x2][_0xb692x3][_0xa4d5[49]]()}}}}function pickBombs(_0xb692x23,_0xb692x24){let _0xb692x25=0;grid[_0xb692x23][_0xb692x24][_0xa4d5[8]]= _0xa4d5[9];for(let _0xb692x4=0;_0xb692x4< count;_0xb692x4++){while(track== false){let _0xb692x2=Math[_0xa4d5[45]](Math[_0xa4d5[50]](0)* c);let _0xb692x3=Math[_0xa4d5[45]](Math[_0xa4d5[50]](0)* r);if(grid[_0xb692x2][_0xb692x3]!= grid[_0xb692x23][_0xb692x24]){if(grid[_0xb692x23][_0xb692x24][_0xa4d5[8]]== _0xa4d5[9]){for(let _0xb692x26=-1;_0xb692x26<= 1;_0xb692x26++){for(let _0xb692x27=-1;_0xb692x27<= 1;_0xb692x27++){if((_0xb692x26+ _0xb692x23)>  -1&& (_0xb692x26+ _0xb692x23)< c&& (_0xb692x27+ _0xb692x24)>  -1&& (_0xb692x27+ _0xb692x24)< r){grid[_0xb692x23+ _0xb692x26][_0xb692x24+ _0xb692x27][_0xa4d5[7]]= true}}}};if(grid[_0xb692x2][_0xb692x3][_0xa4d5[5]]== true|| grid[_0xb692x2][_0xb692x3][_0xa4d5[7]]== true){track= false}else {grid[_0xb692x2][_0xb692x3][_0xa4d5[5]]= true;track= true;empty_spaces--;_0xb692x25++}}};track= false;if(mode== 0){if(_0xb692x25> 10){track= true}}else {if(mode== 1){if(_0xb692x25> 40){track= true}}else {if(mode== 2){if(_0xb692x25> 99){track= true}}}}};document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count}function onClick(_0xb692x29){let _0xb692x2a=canvas;let _0xb692x2b=0;let _0xb692x2c=0;if(_0xb692x2a[_0xa4d5[53]]){do{_0xb692x2b+= _0xb692x2a[_0xa4d5[54]];_0xb692x2c+= _0xb692x2a[_0xa4d5[55]]}while((_0xb692x2a= _0xb692x2a[_0xa4d5[53]]));};x= _0xb692x29[_0xa4d5[56]]- _0xb692x2b;y= _0xb692x29[_0xa4d5[57]]- _0xb692x2c;if(timerclicked== false&& gameOver== false){myTimer= setInterval(myCounter,1000);timerclicked= true};if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[11]]== false&& (grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[12]]== false){if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[5]]== true){victory= false;endGame(victory)}else {if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[6]]== false){empty_spaces--};(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[7]]= true;(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[58]](Math[_0xa4d5[45]](x/ w),Math[_0xa4d5[45]](y/ w));(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[49]]();if(empty_spaces== 0){victory= true;endGame(victory)}}};clicked++}function onRClick(_0xb692x29){let _0xb692x2a=canvas;let _0xb692x2b=0;let _0xb692x2c=0;if(_0xb692x2a[_0xa4d5[53]]){do{_0xb692x2b+= _0xb692x2a[_0xa4d5[54]];_0xb692x2c+= _0xb692x2a[_0xa4d5[55]]}while((_0xb692x2a= _0xb692x2a[_0xa4d5[53]]));};x= _0xb692x29[_0xa4d5[56]]- _0xb692x2b;y= _0xb692x29[_0xa4d5[57]]- _0xb692x2c;if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[10]]== false&& (grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[6]]== false&& (grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[12]]== false){if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[5]]== true){flagged_bombs++};(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[10]]= true;(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[11]]= true;(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[49]]();count--;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count;if((empty_spaces== 0)){victory= true;endGame(victory)}}else {if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[5]]== true){flagged_bombs--};(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[10]]= false;(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[11]]= false;(grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[49]]();if((grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[12]]== false&& (grid[Math[_0xa4d5[45]](x/ w)][Math[_0xa4d5[45]](y/ w)])[_0xa4d5[6]]== false){count++;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count}}}function countBombs(){for(let _0xb692x2=0;_0xb692x2< c;_0xb692x2++){for(let _0xb692x3=0;_0xb692x3< r;_0xb692x3++){grid[_0xb692x2][_0xb692x3][_0xa4d5[59]]()}}}function initialClearSpace(_0xb692x4,_0xb692x5){clearSpace(_0xb692x4,_0xb692x5)}function clearSpace(_0xb692x23,_0xb692x24){let _0xb692x31=_0xb692x23;let _0xb692x32=_0xb692x24;if(bombs_picked== false){pickBombs(_0xb692x31,_0xb692x32);countBombs();bombs_picked= true};if((grid[_0xb692x23][_0xb692x24])[_0xa4d5[8]]== 0){for(let _0xb692x2=-1;_0xb692x2<= 1;_0xb692x2++){for(let _0xb692x3=-1;_0xb692x3<= 1;_0xb692x3++){if((_0xb692x2+ _0xb692x23)>  -1&& (_0xb692x2+ _0xb692x23)< c&& (_0xb692x3+ _0xb692x24)>  -1&& (_0xb692x3+ _0xb692x24)< r){if(grid[_0xb692x23+ _0xb692x2][_0xb692x24+ _0xb692x3][_0xa4d5[5]]== false&& grid[_0xb692x23+ _0xb692x2][_0xb692x24+ _0xb692x3][_0xa4d5[6]]== false){if(grid[_0xb692x23+ _0xb692x2][_0xb692x24+ _0xb692x3][_0xa4d5[10]]== false){empty_spaces--;grid[_0xb692x23+ _0xb692x2][_0xb692x24+ _0xb692x3][_0xa4d5[58]]();grid[_0xb692x23+ _0xb692x2][_0xb692x24+ _0xb692x3][_0xa4d5[49]]()}}}}}}}function saveGame(_0xb692x34,ctime){console[_0xa4d5[61]](_0xa4d5[60]);let _0xb692x35=0;if(mode== 0){_0xb692x35= 0}else {if(mode== 1){_0xb692x35= 1}else {if(mode== 2){_0xb692x35= 2}}};console[_0xa4d5[61]](_0xa4d5[62]);$[_0xa4d5[65]]({type:_0xa4d5[63],url:_0xa4d5[64],data:{Name:_0xb692x34,Total_Time:ctime,Which:_0xb692x35}});console[_0xa4d5[61]](_0xa4d5[62])}function myCounter(){document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]=  ++ctime;let _0xb692x37=Math[_0xa4d5[45]](ctime/ 60);let _0xb692x38=ctime- _0xb692x37* 60;if(_0xb692x37< 10){_0xb692x37= _0xa4d5[67]+ _0xb692x37};if(_0xb692x38< 10){_0xb692x38= _0xa4d5[67]+ _0xb692x38};document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= _0xb692x37+ _0xa4d5[68]+ _0xb692x38}function endGame(_0xb692x3a){if(_0xb692x3a== false){for(let _0xb692x2=0;_0xb692x2< c;_0xb692x2++){for(let _0xb692x3=0;_0xb692x3< r;_0xb692x3++){if(grid[_0xb692x2][_0xb692x3][_0xa4d5[5]]== true){grid[_0xb692x2][_0xb692x3][_0xa4d5[6]]= true;grid[_0xb692x2][_0xb692x3][_0xa4d5[7]]= true;grid[_0xb692x2][_0xb692x3][_0xa4d5[11]]= true;grid[_0xb692x2][_0xb692x3][_0xa4d5[49]]()};grid[_0xb692x2][_0xb692x3][_0xa4d5[12]]= true}}}else {for(let _0xb692x2=0;_0xb692x2< c;_0xb692x2++){for(let _0xb692x3=0;_0xb692x3< r;_0xb692x3++){if(grid[_0xb692x2][_0xb692x3][_0xa4d5[5]]== false){grid[_0xb692x2][_0xb692x3][_0xa4d5[49]]()}else {grid[_0xb692x2][_0xb692x3][_0xa4d5[10]]= true;grid[_0xb692x2][_0xb692x3][_0xa4d5[49]]()};grid[_0xb692x2][_0xb692x3][_0xa4d5[12]]= true}}};gameOver= true;let _0xb692x3b=setTimeout(newGame,500);timerclicked= false}function newGame(){timerclicked= false;start_timer= false;timer_count= 0;let _0xb692x3d=false;if(start== true){if(mode== 0){count= 10;w= 40;beginning_count= count}else {if(mode== 1){count= 40;w= 30;beginning_count= count}else {if(mode== 2){count= 99;w= 30;beginning_count= count}}};ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= null;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count;r= 0;c= 0;track= false;victory= false;gameOver= false;flagged_bombs= 0;bombs_picked= false;setupGrid();drawGrid();start= false;_0xb692x3d= true};if(_0xb692x3d== false){if(victory== false){let _0xb692x37=Math[_0xa4d5[45]](ctime/ 60);let _0xb692x38=ctime- _0xb692x37* 60;if(_0xb692x37< 10){_0xb692x37= _0xa4d5[67]+ _0xb692x37};if(_0xb692x38< 10){_0xb692x38= _0xa4d5[67]+ _0xb692x38};if(confirm(_0xa4d5[69]+ _0xa4d5[70]+ _0xb692x37+ _0xa4d5[68]+ _0xb692x38+ _0xa4d5[71]+ flagged_bombs)){if(mode== 0){count= 10;w= 40;beginning_count= count}else {if(mode== 1){count= 40;w= 30;beginning_count= count}else {if(mode== 2){count= 99;w= 30;beginning_count= count}}};ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= 0;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count;r= 0;c= 0;track= false;victory= false;gameOver= false;flagged_bombs= 0;bombs_picked= false;setupGrid();drawGrid()}else {ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= 0}}else {if(victory== true){if(count> 0){count= 0;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count};let _0xb692x37=Math[_0xa4d5[45]](ctime/ 60);let _0xb692x38=ctime- _0xb692x37* 60;if(_0xb692x37< 10){_0xb692x37= _0xa4d5[67]+ _0xb692x37};if(_0xb692x38< 10){_0xb692x38= _0xa4d5[67]+ _0xb692x38};let _0xb692x34=prompt(_0xa4d5[72]+ _0xa4d5[73]+ _0xb692x37+ _0xa4d5[68]+ _0xb692x38+ _0xa4d5[71]+ beginning_count+ _0xa4d5[74],_0xa4d5[9]);let _0xb692x3e=10;let _0xb692x3f=_0xb692x34[_0xa4d5[75]](0,_0xb692x3e);saveGame(_0xb692x3f,ctime);if(_0xb692x34){if(mode== 0){count= 10;w= 40;beginning_count= count}else {if(mode== 1){count= 40;w= 30;beginning_count= count}else {if(mode== 2){count= 99;w= 30;beginning_count= count}}};ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= null;document[_0xa4d5[14]](_0xa4d5[52])[_0xa4d5[51]]= count;r= 0;c= 0;track= false;victory= false;gameOver= false;flagged_bombs= 0;bombs_picked= false;setupGrid();drawGrid()}else {ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= 0}}else {ctime= 0;clearInterval(myTimer);document[_0xa4d5[14]](_0xa4d5[66])[_0xa4d5[51]]= 0}}}}
+  </script>
+  <style>
+    body {
+      background-color: #000000 !important;	
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-weight: bold;
+    }
+
+    #easy_button,
+    #medium_Button,
+    #hard_Button {
+      background-color: #4CAF50;
+      border: 1px solid black;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #medium_Button {
+      background-color: orange;
+    }
+
+    #hard_Button {
+      background-color: red;
+    }
+
+    p {
+      margin: 4px 2px;
+      font-size: 32px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    #title {
+      display: block;
+    }
+
+    #counter {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      -webkit-text-stroke: 0.1px black;
+    }
+
+    #timer {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      -webkit-text-stroke: 0.1px black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- The game's buttons to choose the mode -->
+  <button id="easy_Button" onclick="easyFunction()">Easy</button>
+  <button id="medium_Button" onclick="mediumFunction()">Medium</button>
+  <button id="hard_Button" onclick="hardFunction()">Hard</button>
+  
+  <!-- The games clock -->
+  <p>&nbsp &nbsp &nbsp Bomb Count: </p>
+  <p id="counter">
+    <script>
+      if (count > 0) {
+        document.getElementById("counter").innerHTML = count;
+      } else {
+        document.getElementById("counter").innerHTML = 00;
+      }
+    </script>
+  </p>
+  <p>&nbsp &nbsp &nbsp Timer: </p>
+  <p id="timer"></p>
+  
+  <!--Images for the bomb and the flag -->
+  <img id="bombpic" height="0" width="0" src="black-bomb-clip-art.png" alt="b">
+  <img id="RacingFlag2" height="0" width="0" src="1505654633.png" alt="f">
+  <canvas oncontextmenu="return false;" height="0" width="0" id="GameBoard" style="border: none;
+                                                            padding-left: 0;
+                                                            padding-right: 0;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                            display: block;">
+      If you are reading this your browser doesn't work with HTML5 canvas
+      <script>
+
+		//The buttons on the games page to start a new game in any mode you want
+		//The game starts automatically in hard mode
+		
+        start = true;
+        mode = 2;
+        newGame();
+
+        function easyFunction(){
+          start = true;
+          mode = 0;
+          newGame();
+        }
+
+        function mediumFunction(){
+          start = true;
+          mode = 1;
+          newGame();
+        }
+
+        function hardFunction(){
+          start = true;
+          mode = 2;
+          newGame();
+        }
+      </script>
+    </canvas>
+</body>
+
+</html>
