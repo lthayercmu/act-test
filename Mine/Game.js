@@ -15,6 +15,8 @@ let mode = 0;
 let empty_spaces;
 let myTimer;
 let timerclicked = false;
+let secret = "hello123!";
+let password = "hello123!";
 
 //makes the board for the bombs to be placed in
 function makeBoard(c, r) {
